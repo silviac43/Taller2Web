@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.uis.edu.co" lang="es" xml:lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Rellena tu CV</title>
+</head>
+
+<body>
+    <h3>Rellena tu CV</h3>
+    <form action="/cv/dataCV" method="post" enctype="multipart/form-data">
+        Nombre <br />
+        <input type="text" name="nombre" value="" size="20" maxlength="30" />
+        <br />
+        Apellidos <br />
+        <input type="text" name="apellidos" value="" size="50" maxlength="80" />
+        <br />
+        Contraseña <br />
+        <input type="password" name="contrasena" value="" maxlength="10" />
+        <br />
+        Confirme contraseña <br />
+        <input type="password" name="contrasena" value="" maxlength="10" />
+        <br />
+        Identificación <br />
+        <select name="select">
+            <option value="CC">CC</option>
+            <option value="TI" selected>TI</option>
+            <option value="CE">CE</option>
+        </select>
+        <input type="text" name="idsuj" value="" size="10" maxlength="9" />
+        <br />
+        Sexo <br />
+        <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+        <br />
+        <input type="radio" name="sexo" value="mujer" /> Mujer
+        <br /><br />
+        Incluir mi foto
+        <br></br> <input type="file" name="foto" />
+        <br /><br />
+        <input name="suscribir" type="checkbox" value="suscribir" checked="checked" />
+        Estudiante...
+        <br /><br />
+        <form action="" method="post"></form>
+        <fieldset style="width:500px">
+            <legend>Datos personales</legend>
+            Departamento
+            <p>
+                <select name="select">
+                    <option disabled selected value> --Seleciona-- </option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Antioquia">Antioquia</option>
+                    <option value="Arauca">Arauca</option>
+                    <option value="Atlantico">Atlantico</option>
+                    <option value="Bogota">Bogota</option>
+                    <option value="Bolivar">Bolivar</option>
+                    <option value="Boyaca">Boyaca</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Caqueta">Caqueta</option>
+                    <option value="Casanare">Casanare</option>
+                    <option value="Cauca">Cauca</option>
+                    <option value="Cesar">Cesar</option>
+                    <option value="Choco">Choco</option>
+                    <option value="Cordoba">Cordoba</option>
+                    <option value="Cundinamarca">Cundinamarca</option>
+                    <option value="Guainia">Guainia</option>
+                    <option value="Guaviare">Guaviare</option>
+                    <option value="Huila">Huila</option>
+                    <option value="La Guajira">La Guajira</option>
+                    <option value="Magdalena">Magdalena</option>
+                    <option value="Meta">Meta</option>
+                    <option value="Nariño">Nariño</option>
+                    <option value="Norte de Santander">Norte de Santander</option>
+                    <option value="Putumayo">Putumayo</option>
+                    <option value="Quindio">Quindio</option>
+                    <option value="Risaralda">Risaralda</option>
+                    <option value="San Andres y Providencia">San Andres y Providencia</option>
+                    <option value="Santander">Santander</option>
+                    <option value="Sucre">Sucre</option>
+                    <option value="Tolima">Tolima</option>
+                    <option value="Valle del Cauca">Valle del Cauca</option>
+                    <option value="Vaupes">Vaupes</option>
+                    <option value="Vichada">Vichada</option>
+                </select>
+            <p>
+            <form action="/cv/dataCV" method="post" enctype="multipart/form-data">
+                Fecha de nacimiento
+                <p><input type="text" name="dia" value="" size="10" maxlength="10" />
+                    de
+                    <select name="select">
+                        <option disabled selected value> --Seleciona-- </option>
+                        <option selected value="Enero">Enero</option>
+                        <option value="Febrero">Febrero</option>
+                        <option value="Marzo">Marzo</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Septiembre">Septiembre</option>
+                        <option value="Octubre">Octubre</option>
+                        <option value="Noviembre">Noviembre</option>
+                        <option value="Diciembre">Diciembre</option>
+                    </select>
+                    de
+                    <input type="text" name="year" value="" size="10" maxlength="10" />
+                </p>
+            </form>
+            Tema de interés
+            <select name="select">
+                <option disabled selected value> --Seleciona-- </option>
+                <option value="Administración de base de datos">Administración de base de datos</option>
+                <option value="Análisis y programación">Análisis y programación</option>
+                <option value="Arquitectura">Arquitectura</option>
+                <option value="Calidad">Calidad</option>
+                <option value="ERP,CRM, Business Intelligence">ERP,CRM, Business Intelligence</option>
+            </select>
+        </fieldset>
+        <br></br>
+        <input type="submit" name="enviar" value="Guardar cambios" />
+        <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+    </form>
+</body>
+
+</html>
